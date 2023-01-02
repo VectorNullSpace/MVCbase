@@ -20,18 +20,26 @@ import pandas as pd
 class DataFrameModel:
 
     def __init__(self):
-        self.df = None
-        self.columns = []
-        self.selected_columns = []
+        self.df: pd.DataFrame = None
+        self.columns: List[str] = []
+        self.selected_columns: List[str] = []
 
     def open_excel(self, filepath: str) -> None:
         try:
             self.df = pd.read_excel(filepath)
             self.columns = self.df.columns.tolist()
             self.selected_columns = []
+        except FileNotFoundError:
+            # handle the exception here
+            print("FileNotFoundError exception caught while attempting to run the function open_excel")
+            pass
+        except IOError:
+            # handle the exception here
+            print("IOError exception caught while attempting to run the function open_excel")
+            pass
         except:
             # handle the exception here
-            print("exception caught while attempting to run the function")
+            print("an exception was caught while attempting to run the function open_excel")
             pass
 
     def set_columns(self, columns: List[str]) -> None:
@@ -40,9 +48,13 @@ class DataFrameModel:
     def save_excel(self, filepath: str) -> None:
         try:
             self.df[self.selected_columns].to_excel(filepath, index=False)
+        except PermissionError:
+            # handle the exception here
+            print("PermissionError exception caught while the user does not have the necessary permissions to write to the specified filepath.")
+            pass
         except:
             # handle the exception here
-            print("exception caught while attempting to run the function")
+            print("exception caught while attempting to run the function save_excel")
             pass
 
 
