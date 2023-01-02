@@ -17,7 +17,7 @@ Methods:
 from typing import List
 import pandas as pd
 
-class Model:
+class DataFrameModel:
 
     def __init__(self):
         self.df = None

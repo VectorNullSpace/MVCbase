@@ -1,7 +1,7 @@
 #start of my_view.py
 import sys
 from PyQt5 import QtWidgets
-from my_model import Model
+from my_model import DataFrameModel
 from reduce_table_page import reduceTablePage
 from page2 import Page2
 

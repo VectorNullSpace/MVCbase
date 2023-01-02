@@ -2,7 +2,7 @@
 
 import sys
 from PyQt5 import QtWidgets
-from my_model import Model
+from my_model import DataFrameModel
 from my_view import View
 from my_controller import Controller
 
@@ -10,7 +10,7 @@ def main():
     
     app = QtWidgets.QApplication(sys.argv)
     
-    model = Model()
+    model = DataFrameModel()
     view = View(model)
     print("view object is created")
     controller = Controller(model, view)
