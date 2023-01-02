@@ -17,11 +17,11 @@ class View(QtWidgets.QWidget):
         self.stack = QtWidgets.QStackedWidget(self)
         
         # create instances of the Page1 and Page2 classes
-        page1 = reduceTablePage(self.model, self)
+        reduce_table_page = reduceTablePage(self.model, self)
         page2 = Page2(self.model, self)
         
         # add the pages to the stacked widget
-        self.stack.addWidget(page1)
+        self.stack.addWidget(reduce_table_page)
         self.stack.addWidget(page2)
         
         # make page one the current page displayed
