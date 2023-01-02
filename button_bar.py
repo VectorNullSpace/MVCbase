@@ -1,4 +1,4 @@
-#start of buttonBar.py
+#start of button_bar.py
 import sys
 from PyQt5 import QtWidgets
 
@@ -34,4 +34,4 @@ class ButtonBar(QtWidgets.QWidget):
 
         self.setLayout(hbox)
 
-#end of buttonBar.py
+#end of button_bar.py

@@ -1,10 +1,10 @@
-#start of myMain.py
+#start of my_main.py
 
 import sys
 from PyQt5 import QtWidgets
-from myModel import Model
-from myView import View
-from myController import Controller
+from my_model import Model
+from my_view import View
+from my_controller import Controller
 
 def main():
     
@@ -21,4 +21,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-#end of myMain.py
+#end of my_main.py

@@ -1,4 +1,4 @@
-#start of myButtonLogic.py
+#start of my_button_logic.py
 
 import sys
 from PyQt5 import QtWidgets
@@ -33,4 +33,4 @@ class ButtonLogic:
     def update_view(self):
         self.view.update_lbl_text()
 
-#end of myButtonLogic.py
+#end of my_button_logic.py

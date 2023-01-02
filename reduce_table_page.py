@@ -1,8 +1,8 @@
-#start of reduceTablePage.py
+#start of reduce_table_page.py
 import sys
 from PyQt5 import QtWidgets
-from myButtonLogic import ButtonLogic
-from buttonBar import ButtonBar
+from my_button_logic import ButtonLogic
+from button_bar import ButtonBar
 
 class reduceTablePage(QtWidgets.QWidget):
     

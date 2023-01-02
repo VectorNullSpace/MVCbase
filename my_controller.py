@@ -1,4 +1,4 @@
-#start of myController.py
+#start of my_controller.py
 
 class Controller:
     
@@ -14,4 +14,4 @@ class Controller:
         selected_columns = self.view.get_selected_columns()
         self.model.set_columns(selected_columns)
 
-#end of myController.py
+#end of my_controller.py

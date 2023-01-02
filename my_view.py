@@ -1,8 +1,8 @@
-#start of myView.py
+#start of my_view.py
 import sys
 from PyQt5 import QtWidgets
-from myModel import Model
-from reduceTablePage import reduceTablePage
+from my_model import Model
+from reduce_table_page import reduceTablePage
 from page2 import Page2
 
 class View(QtWidgets.QWidget):
