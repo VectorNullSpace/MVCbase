@@ -23,6 +23,8 @@ class DataFrameModel:
         self.df: pd.DataFrame = None
         self.columns: List[str] = []
         self.selected_columns: List[str] = []
+        #self.dfinfo: str
+        #self.dfdescription: str
 
     def open_excel(self, filepath: str) -> None:
         try:
@@ -57,8 +59,17 @@ class DataFrameModel:
             print("exception caught while attempting to run the function save_excel")
             pass
 
-
     def get_lbl_text(self):
         return ', '.join(self.selected_columns)
 
+    #functions to display information about the dataframe 
+    def analyze_df(self):
+
+        self.dfdescription = self.df.describe().to_string()
+
+        print(self.dfdescription)
+        return self.dfdescription
+
+
+     
 #end of my_model.py
