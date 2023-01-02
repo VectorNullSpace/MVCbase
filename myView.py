@@ -1,3 +1,5 @@
+#start of myView.py
+
 import sys
 from PyQt5 import QtWidgets
 from myButtonLogic import ButtonLogic
@@ -62,3 +64,5 @@ class View(QtWidgets.QWidget):
         selected_items = self.list_columns.selectedItems()
         selected_columns = [item.text() for item in selected_items]
         return selected_columns
+
+#end of myView.py

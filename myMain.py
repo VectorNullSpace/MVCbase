@@ -1,3 +1,5 @@
+#start of myMain.py
+
 import sys
 from PyQt5 import QtWidgets
 from myModel import Model
@@ -17,3 +19,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+#end of myMain.py

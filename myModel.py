@@ -1,3 +1,5 @@
+#start of myModel.py
+
 import pandas as pd
 
 class Model:
@@ -20,3 +22,5 @@ class Model:
 
     def get_lbl_text(self):
         return ', '.join(self.selected_columns)
+
+#end of myModel.py

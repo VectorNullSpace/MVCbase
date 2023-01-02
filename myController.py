@@ -1,3 +1,5 @@
+#start of myController.py
+
 class Controller:
     
     def __init__(self, model, view):
@@ -11,3 +13,5 @@ class Controller:
     def select_columns(self):
         selected_columns = self.view.get_selected_columns()
         self.model.set_columns(selected_columns)
+
+#end of myController.py
