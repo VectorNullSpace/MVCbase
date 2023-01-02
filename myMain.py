@@ -14,6 +14,7 @@ def main():
     view = View(model)
     print("view object is created")
     controller = Controller(model, view)
+    view.show()
     
     sys.exit(app.exec_())
 
