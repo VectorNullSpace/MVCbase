@@ -19,9 +19,9 @@ class ButtonBar(QtWidgets.QWidget):
 
 
         # create two buttons to switch between pages
-        self.buttons['Page1'] = QtWidgets.QPushButton('Page 1')
-        self.buttons['Page1'].clicked.connect(lambda: self.view.stack.setCurrentIndex(0))
-        hbox.addWidget(self.buttons['Page1'])
+        self.buttons['Reduce Table Page'] = QtWidgets.QPushButton('Reduce Table Page')
+        self.buttons['Reduce Table Page'].clicked.connect(lambda: self.view.stack.setCurrentIndex(0))
+        hbox.addWidget(self.buttons['Reduce Table Page'])
 
         self.buttons['Page2'] = QtWidgets.QPushButton('Page 2')
         self.buttons['Page2'].clicked.connect(lambda: self.view.stack.setCurrentIndex(1))

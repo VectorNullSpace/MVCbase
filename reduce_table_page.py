@@ -24,7 +24,7 @@ class reduceTablePage(QtWidgets.QWidget):
 
         ##implement the buttonBar(must do for every page class)
         # add widgets to the layout
-        vbox.addWidget(QtWidgets.QLabel('This is page 1'))
+        vbox.addWidget(QtWidgets.QLabel('This is reduce table page'))
         # create an instance of the ButtonBar class
         button_bar = ButtonBar(self.view)
         # add the ButtonBar instance to the page layout
