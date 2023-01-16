@@ -66,7 +66,6 @@ class DataFrameModel:
     def analyze_df(self):
 
         self.dfdescription = self.df.describe().to_string()
-
         print(self.dfdescription)
         return self.dfdescription
 
