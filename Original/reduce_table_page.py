@@ -2,7 +2,7 @@
 import sys
 from PyQt5 import QtWidgets
 from my_button_logic import ButtonLogic
-from button_bar import ButtonBar
+from Original.button_bar import ButtonBar
 
 class reduceTablePage(QtWidgets.QWidget):
     

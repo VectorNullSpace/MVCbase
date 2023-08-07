@@ -2,7 +2,7 @@
 
 import sys
 from PyQt5 import QtWidgets
-from button_bar import ButtonBar
+from Original.button_bar import ButtonBar
 from my_button_logic import ButtonLogic
 
 class Page2(QtWidgets.QWidget):
